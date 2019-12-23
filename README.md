@@ -9,7 +9,7 @@ Before using the bot, familiarize yourself with the [Bot Framework](https://dev.
 1.  Register your new bot on the [Azure portal](http://portal.azure.com). Manual: [Microsoft Docs](https://docs.microsoft.com/en-en/azure/bot-service/abs-quickstart?view=azure-bot-service-4.0&viewFallbackFrom=azure-bot-service-3.0)
 2.  Change `_appId` in [NotifyController](Controllers/NotifyController.cs) .
 3.  Change [ConnectionString](appsettings.json) to your database. You can use local or server database.
-4.  Create a new webhook on the TestIT portal. Manual: [TestIT docs](). For the webhook link, specify the following line: `https://<NAME_OF_YOUR_BOT>.azurewebsites.net/api/notify`. The webhook must contain the request body. Use the `Post` method when setting up your webhook.
+4.  Create a new webhook on the TestIT portal. Manual: [TestIT docs](https://docs.testit.software/docs/webhook-guide). For the webhook link, specify the following line: `https://<NAME_OF_YOUR_BOT>.azurewebsites.net/api/notify`. The webhook must contain the request body. Use the `Post` method when setting up your webhook.
 The request headers should contain the following fields:
     - `secretKeyBot`: The unique key of dialogs. We recommend using a set of letters and numbers with a length of at least 15;
     - `USER_NAME`: `$USER_NAME` on the TestIT portal;
